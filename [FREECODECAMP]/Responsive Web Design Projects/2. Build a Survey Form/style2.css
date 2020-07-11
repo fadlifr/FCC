@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Comic+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(4, 36, 29, 0.7), rgba(26, 80, 70, 0.6)), url(./img/images2.jpg);
+    /* The image used */
+    background-color: #134338;
+    /* Used if the image is unavailable */
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    margin: 0;
+    color: #000;
+}
+
+h1,
+p {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+h1+p {
+    margin-top: 0;
+
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px 20px;
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+button {
+    background-color: #123d35;
+    border: 1px solid #777;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-family: inherit;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* menghilangkan panah untuk browser firefox, brave */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* menghilangkan panah untuk browser Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

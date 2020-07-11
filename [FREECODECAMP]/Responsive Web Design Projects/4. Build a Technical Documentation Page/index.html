@@ -1,0 +1,226 @@
+<!-- FCC: Technical Documentation Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>HTML Technical Documentation</title>
+	</head>
+
+	<body>
+		<nav id="navbar">
+			<header>📂HTML Documentation</header>
+			<a href="#Introduction" class="nav-link">Introduction</a>
+			<a href="#Learning_pathway" class="nav-link">Learning pathway</a>
+			<a href="#Modules" class="nav-link">Modules</a>
+			<a href="#Solving_common_HTML_problems" class="nav-link">Solving common HTML problems</a>
+			<a href="#See_also" class="nav-link">See also</a>
+			<a href="#References" class="nav-link">References</a>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="Introduction">
+				<header>Introduction</header>
+				<p>
+					To build websites, you should know about
+					<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">HTML</a>
+					— the fundamental technology used to define the structure of a webpage. HTML is used to
+					specify whether your web content should be recognized as a paragraph, list, heading, link,
+					image, multimedia player, form, or one of many other available elements or even a new
+					element that you define.
+				</p>
+			</section>
+
+			<section class="main-section" id="Learning_pathway">
+				<header>Learning pathway</header>
+				<p>
+					Ideally, you should start your learning journey by learning HTML. Start by reading
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction"
+						target="_blank"
+						>Introduction to HTML</a
+					>. You may move on to learning about more advanced topics such as:
+				</p>
+				<ul>
+					<li>
+						<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">CSS</a>,
+						and how to use it to style HTML (for example alter your text size and fonts used, add
+						borders and drop shadows, layout your page with multiple columns, add animations and
+						other visual effects.)
+					</li>
+					<li>
+						<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank"
+							>JavaScript</a
+						>, and how to use it to add dynamic functionality to web pages (for example find your
+						location and plot it on a map, make UI elements appear/disappear when you toggle a
+						button, save users' data locally on their computers, and much much more.)
+					</li>
+				</ul>
+				<p>
+					Before starting this topic, you should have at least basic familiarity with using
+					computers and using the web passively (i.e. just looking at it, consuming the content. You
+					should have a basic work environment set up as detailed in
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software"
+						target="_blank"
+						>Installing basic software</a
+					>, and understand how to create and manage files, as detailed in Dealing with files — both
+					are parts of our
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"
+						target="_blank"
+						>Getting started with the web</a
+					>complete beginner's module.
+				</p>
+				<p>
+					It is recommended that you work through
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"
+						target="_blank"
+						>Getting started with the web</a
+					>before attempting this topic, however, it isn't absolutely necessary; much of what is
+					covered in the HTML basics article is also covered in our Introduction to HTML module,
+					albeit in a lot more detail.
+				</p>
+			</section>
+
+			<section class="main-section" id="Modules">
+				<header>Modules</header>
+				<p>
+					This topic contains the following modules, in a suggested order for working through them.
+					You should definitely start with the first one.
+				</p>
+				<h3>Introduction to HTML</h3>
+				<p>
+					HTML is the standard markup language for creating Web page.
+				</p>
+				<ul>
+					<li>HTML stands for Hyper Text Markup Language</li>
+					<li>HTML is the standard markup language for creating Web pages</li>
+					<li>HTML describes the structure of a Web page</li>
+					<li>HTML consists of a series of elements</li>
+					<li>HTML elements tell the browser how to display the content</li>
+					<li>
+						HTML elements label pieces of content such as "this is a heading","this is a paragraph",
+						"this is a link", etc.
+					</li>
+				</ul>
+				<h4>Anatomy of an HTML document</h4>
+				<pre><code>
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+				&lt;head&gt;
+					&lt;meta charset="utf-8"&gt;
+					&lt;title&gt;Title Page&lt;/title&gt;
+				&lt;/head&gt;
+				&lt;body&gt;
+					&lt;h1&gt;First Heading&lt;/h1&gt;
+					&lt;p&gt;First paragraph&lt;/p&gt;
+				&lt;/body&gt;
+			&lt;/html&gt;
+			</code></pre>
+				<p>Here we have:</p>
+				<ol>
+					<li>
+						<code><span class="code-sample">&lt;!DOCTYPE html&gt;</span></code
+						>: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to
+						a set of rules that the HTML page had to follow to be considered good HTML. More
+						recently, the doctype is a historical artifact that needs to be included for everything
+						else to work right.
+						<code><span class="code-sample">&lt;!DOCTYPE html&gt;</span></code> is the shortest
+						string of characters that counts as a valid doctype. That is all you need to know!
+					</li>
+					<li>
+						<code><span class="code-sample">&lt;html&gt;&lt;/html&gt;</span></code
+						>: The <code><span class="code-sample">&lt;html&gt</span></code> element. This elemen
+						wraps all the content on the page. It is sometimes known as the root element.
+					</li>
+					<li>
+						<code><span class="code-sample">&lt;head&gt;&lt;/head&gt;</span></code
+						>: The <code><span class="code-sample">&lt;head&gt;</span></code> element. This element
+						acts as a container for everything you want to include on the HTML page,
+						<strong>that isn't the content</strong> the page will show to viewers. This includes
+						keywords and a page description that would appear in search results, CSS style content,
+						characterset declarations, and more. You'll learn more about this in the next article of
+						the series.
+					</li>
+					<li>
+						<code><span class="code-sample">&lt;meta charset="utf-8"&gt;</span></code
+						>: This element specifies the character set for your dodument to UTF-8, which includes
+						most characters from the vast majority of human written languages.With this setting,the
+						page can now handle any textual content it might containt. There is no reason not to set
+						this, it can help avoid some problems later.
+					</li>
+					<li>
+						<code><span class="code-sample">&lt;title&gt;&lt;/title&gt;</span></code
+						>: The <code><span class="code-sample">&lt;title&gt;</span></code> element. This sets
+						the title of the page, which is the title that appears in the browser tab the page is
+						loaded in. The page title is also used to describe the page when it is bookmarked.
+					</li>
+					<li>
+						<code><span class="code-sample">&lt;body&gt;&lt;/body&gt;</span></code
+						>: The <code><span class="code-sample">&lt;body&gt;</span></code> element. This contains
+						<em>all</em> the content that displays on the page, including text, images, videos,
+						games, playable audio tracks, or whatever else.
+					</li>
+				</ol>
+
+				<h3>Multimedia and embedding</h3>
+				<p>
+					This module explores how to use HTML to include multimedia in your web pages, including
+					the different ways that images can be included, and how to embed video, audio, and even
+					entire other webpages.
+				</p>
+				<h3>HTML tables</h3>
+				<p>
+					Representing tabular data on a webpage in an understandable, accessible way can be a
+					challenge. This module covers basic table markup, along with more complex features such as
+					implementing captions and summaries.
+				</p>
+			</section>
+
+			<section class="main-section" id="Solving_common_HTML_problems">
+				<header>Solving common HTML problems</header>
+				<p>
+					Use HTML to solve common problems provides links to sections of content explaining how to
+					use HTML to solve very common problems when creating a webpage: dealing with titles,
+					adding images or videos, emphasizing content, creating a basic form, etc.
+				</p>
+			</section>
+
+			<section class="main-section" id="See_also">
+				<header>See also</header>
+				<h3>Web forms</h3>
+				<p>
+					This module provides a series of articles that will help you master the essentials of web
+					forms. Web forms are a very powerful tool for interacting with users — most commonly they
+					are used for collecting data from users, or allowing them to control a user interface.
+					However, for historical and technical reasons it's not always obvious how to use them to
+					their full potential. We'll cover all the essential aspects of Web forms including marking
+					up their HTML structure, styling form controls, validating form data, and submitting data
+					to the server.
+				</p>
+				<h3>HTML (HyperText Markup Language)</h3>
+				<p>
+					The main entry point for HTML reference documentation on MDN, including detailed element
+					and attribute references — if you want to know what attributes an element has or what
+					values an attribute has, for example, this is a great place to start.
+				</p>
+			</section>
+
+			<section class="main-section" id="References">
+				<header>References</header>
+				<p>All the documentation in this page is taken from:</p>
+				<ul>
+					<li>
+						<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">MDN</a>
+					</li>
+					<li>
+						<a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

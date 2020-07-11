@@ -1,0 +1,205 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+/* General */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 50px 0 0;
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	/* font-family: 'Press Start 2P', cursive; */
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 48px;
+	margin-bottom: 0;
+}
+
+/* video */
+iframe {
+	max-width: 70%;
+	margin: 5% 0;
+}
+
+section h2 {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.btn {
+	background-color: #95a844;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #202703; /* 3d effect */
+	color: #000;
+	display: inline-block;
+	font-size: 16px;
+	padding: 10px 25px;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.1s ease;
+}
+
+.btn-ghost {
+	background-color: #000;
+	color: #95a844;
+	box-shadow: none;
+	border: none;
+}
+
+.btn:active {
+	box-shadow: 0 0 0 #202703;
+	transform: translate(2px, 2px);
+}
+
+.btn-ghost:active {
+	transform: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* Nav and Header */
+nav {
+	background-color: #95a844;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.nav-link {
+	color: #000;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.header-left {
+	margin-top: 0;
+	padding: 10px;
+	width: 60%;
+}
+
+.header-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	margin-top: 40px;
+}
+
+/* Features section */
+.coffee {
+	background: #95a844;
+	border-radius: 10px;
+	/* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); */
+	margin: 0 1.66%;
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+}
+
+.coffee i {
+	/* color: #ffdb15; */
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+.coffee h2 {
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.coffee h4 {
+	font-size: 14px;
+	color: #202020;
+}
+
+.coffee p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* Form section */
+form {
+	margin-bottom: 10px;
+}
+
+form .flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+form input[type='email'] {
+	border-radius: 5px;
+	border: 0;
+	color: #000;
+	display: inline-block;
+	font-size: 14px;
+	flex: 1;
+	padding: 10px 25px;
+	margin-right: 10px;
+}
+
+.subscribe {
+	background-color: #95a844;
+}
+
+/* Footer Styling */
+footer {
+	background-color: #000;
+	color: #95a844;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Mobile or responsive style */
+@media (max-width: 480px) {
+	/* for mobile */
+	.header-left,
+	.header-right {
+		width: 100%;
+	}
+
+	.header-right {
+		order: 0;
+	}
+
+	.header-left {
+		order: 1;
+		padding-left: 20px;
+		text-align: center;
+	}
+
+	.header-left h1 {
+		display: none;
+	}
+
+	.coffee {
+		width: 100%;
+		margin: 10px;
+	}
+
+	.flex input {
+		margin: 5px 10px;
+		width: 100%;
+	}
+}
